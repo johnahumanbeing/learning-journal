@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def find_max(arr):
     max_num = arr[0]
     for num in arr:
