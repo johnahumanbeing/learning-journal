@@ -1,0 +1,17 @@
+<h2>Sales Report</h2>
+<table border="1">
+    <tr>
+        <th>Employee</th>
+        <th>Date</th>
+        <th>Cylinders Sold</th>
+        <th>Total Amount</th>
+    </tr>
+    {% for sale in sales %}
+    <tr>
+        <td>{{ sale.employee.full_name }}</td>
+        <td>{{ sale.date }}</td>
+        <td>{{ sale.cylinders_sold }}</td>
+        <td>Ksh {{ sale.total_amount }}</td>
+    </tr>
+    {% endfor %}
+</table>
